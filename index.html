@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Tip Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <h1>Tip Calculator</h1>
+        <hr>
+        <div class="">
+            <label>Total Bill</label>
+            <input type="text" class="textBox" placeholder="Enter your total bill..." id="billTotal">
+        </div>
+        <div class="">
+            <label>Tip:</label>
+            <input type="range" value="0" min="0" max="20" id="tipInput">
+            <span id="tipOutput"></span>
+        </div>
+        <div>
+            <label>Split (number of people)</label>
+            <input type="range" min="1" max="10" value="1" id="splitInput">
+            <span id="splitOutput"></span>
+        </div>
+        <hr>
+        <div>
+            <div>
+                <label>New Bill (per person):</label><span id="newBill"></span>
+            </div>
+            <div>
+                <label>Tip Amount (per person):</label><span id="tipEach"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

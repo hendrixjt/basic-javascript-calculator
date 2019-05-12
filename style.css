@@ -1,0 +1,59 @@
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-size:1.8rem;
+    width: 100%;
+    margin: 0 auto;
+    letter-spacing: 0.15rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    padding: 1.5rem;
+    background: linear-gradient(-45deg, rgb(125, 153, 228), rgb(16, 117, 194));
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+}
+
+div {
+    line-height: 2.5rem;
+}
+
+input[type="text"] {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+label, input {
+    width: 100%;
+}
+
+.textBox {
+    border-radius: .5rem;
+}
+
+@media(min-width: 700px) {
+    body {
+        width: 60%;
+        background: url(NorthernLights.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    #container {
+        opacity: 0.7;
+    }
+
+    label, input {
+        display: inline-block;
+        width: 40%;
+    }
+
+    div {
+        line-height: 4rem;
+    }
+}
